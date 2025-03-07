@@ -41,7 +41,7 @@ for i in range(10):
     test_number[i] = image_number[i].reshape(-1, 400).astype(np.float32)
  
     # 使用 KNN 進行預測
-    ret, result[i], neighbours, dist = knn.findNearest(test_number[i], k=5)
+    ret, result[i], neighbours, dist = knn.findNearest(test_number[i], k=3)
  
     # 建立 64x64 白色背景結果影像
     image_result[i] = np.ones((64, 64, 3), np.uint8) * 255
