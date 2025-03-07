@@ -30,8 +30,8 @@ def extract_and_resize_digits(digit_images, output_folder="output_digits"):
         # Step 1: Resize to 18x16 while maintaining aspect ratio
         aspect_ratio = float(img.shape[1]) / float(img.shape[0])
         if aspect_ratio > 1:  # Wider than tall
-            new_w = 14
-            new_h = int(14 / aspect_ratio)
+            new_w = 16
+            new_h = int(16 / aspect_ratio)
         else:  # Taller than wide
             new_h = 16
             new_w = int(16 * aspect_ratio)
